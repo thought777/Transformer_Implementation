@@ -83,7 +83,7 @@ class FeedForwardBlock(nn.Module):
 
 class MultiHeadAttentionBlock(nn.Module):
     def __init__(self,d_model:int,h:int,dropout:float) -> None:
-        super().__init__(
+        super().__init__()
         
         
     
