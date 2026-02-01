@@ -130,8 +130,4 @@ class MultiHeadAttentionBlock(nn.Module):
         return self.w_o(x)
     
 class ResidualConnection(nn.Module):
-        
-
-        
-        
-        
+    
