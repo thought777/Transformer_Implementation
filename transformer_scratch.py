@@ -38,7 +38,7 @@ class PositionalEncoding(nn.Module):
         # positional encoding : (pos,2i)=sin (pos/(10000)**d(2*i)/model)
         # positional encoding : (pos,2i+1)=cos (pos/(10000)**d(2*i)/model)
         #create a vector of shape (seq_length,1)
-        position=torch.arange(0,seqlen,dtype=torch.float).unsqueeze(1) # (seq_len,1) #word inside the sentence
+        position=torch.arange(0,seq_len,dtype=torch.float).unsqueeze(1) # (seq_len,1) #word inside the sentence
         
         #calculated in log term because log stability
         div_term=torch.exp(torch.arange(0,d_model,2).float()*(-math.log(10000.0)/d_model))
